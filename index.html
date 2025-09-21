@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="row align-items-start">
+    <div class="col-2"></div>
+    <div class="col-10">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://img.freepik.com/psd-premium/cuadrado-redondeado-3d-logo-instagram-brillante_1073073-1970.jpg?w=1060"
+              alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            INSTAGRAM
+          </a>
+          <div class="btn-group">
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Nueva publicación
+            </button>
+
+            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Añadir cuenta</a></li>
+              <li><a class="dropdown-item" href="#">Cambiar cuenta</a></li>
+              <li><a class="dropdown-item" href="#">Desconectar todas las cuentas</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Salir</a></li>
+            </ul>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Nueva publicación</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Contenido:
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <i class="fa-solid fa-camera"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Publicar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </nav>
+  </div>
+  <!-- Body -->
+
+  <div class="row">
+    <div class="col-5"></div>
+    <div class="col-2">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-all" viewBox="0 0 16 16">
+  <path d="M0 0h16v16H0zm1 1v6.5h6.5V1zm7.5 0v6.5H15V1zM15 8.5H8.5V15H15zM7.5 15V8.5H1V15z"/>
+</svg></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-device-ssd" viewBox="0 0 16 16">
+  <path d="M4.75 4a.75.75 0 0 0-.75.75v3.5c0 .414.336.75.75.75h6.5a.75.75 0 0 0 .75-.75v-3.5a.75.75 0 0 0-.75-.75zM5 8V5h6v3zm0-5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m7 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m7 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm11 12V2a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1v-2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2a1 1 0 0 0 1-1m-7.25 1v-2H5v2zm1.75 0v-2h-.75v2zm1.75 0v-2H8.5v2zM11 13h-.75v2H11z"/>
+</svg></button>
+        </li>
+    </div>
+    <div class="col-5"></div>
+  </div>
+
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container text-center">
+        <div class="row d-flex p-2">
+          <div class="col">
+            <img src="https://i.pinimg.com/736x/d8/e3/04/d8e3040372030c633df7f7ee5034dfef.jpg"
+              class="object-fit-sm-contain border rounded" d-flex alt="..." style="width: 300px; height: 300px;">
+
+          </div>
+          <div class="col">
+            <img src="https://www.xtrafondos.com/thumbs/1_3604.jpg" class="object-fit-sm-contain border rounded"
+              alt="..." style="width: 300px; height: 300px;">
+
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="https://naruto-official.com/special/anime_gallery/anime-gallery2.webp"
+              class="object-fit-sm-contain border rounded" alt="..." style="width: 300px; height: 300px;">
+
+
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGufaSsUDcroDGGHE1QIy6seJdsVBw4lQ6Q&s"
+              class="object-fit-sm-contain border rounded" alt="..." style="width: 300px; height: 300px;">
+          </div>
+          <div class="col">
+            <img src="https://img.pccomponentes.com/pcblog/9006/ver-anime-naruto-orden-peliculas.jpg"
+              class="object-fit-sm-contain border rounded" alt="..." style="width: 300px; height: 300px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="object-fit-sm-contain border rounded col-2" style="width: 400px; height: 1000px;" alt="...">
+          <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <a class="navbar-brand" href="#">Fotos</a>
+          </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <h4 id="scrollspyHeading1"></h4>
+            <p><img src="https://i.pinimg.com/736x/d8/e3/04/d8e3040372030c633df7f7ee5034dfef.jpg"
+                class="object-fit-sm-contain border rounded" alt="..." style="width: 300px; height: 300px;"></p>
+            <h4 id="scrollspyHeading2"></h4>
+            <p><img src="https://www.xtrafondos.com/thumbs/1_3604.jpg" class="object-fit-sm-contain border rounded"
+                alt="..." style="width: 300px; height: 300px;"></p>
+            <h4 id="scrollspyHeading3"></h4>
+            <p><img src="https://naruto-official.com/special/anime_gallery/anime-gallery2.webp"
+                class="object-fit-sm-contain border rounded" alt="..." style="width: 300px; height: 300px;"></p>
+            <h4 id="scrollspyHeading4"></h4>
+            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGufaSsUDcroDGGHE1QIy6seJdsVBw4lQ6Q&s"
+                class="object-fit-sm-contain border rounded" alt="..." style="width: 300px; height: 300px;"></p>
+            <h4 id="scrollspyHeading5"></h4>
+            <p><img src="https://img.pccomponentes.com/pcblog/9006/ver-anime-naruto-orden-peliculas.jpg"
+                class="object-fit-sm-contain border rounded" alt="..." style="width: 300px; height: 300px;"></p>
+
+          </div>
+        </div>
+        <div class="col-5"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+  <script src="https://kit.fontawesome.com/d13e812dc8.js" crossorigin="anônimo"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
